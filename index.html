@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume </h1>
+        
+        <!-- Form for user input -->
+        <form id="resumeForm">
+            <h2>Personal Information</h2>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+            
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" placeholder="Father Name" required>
+            
+            <label for="image">Image URL:</label>
+            <input type="file" id="image" placeholder="image">
+            
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" placeholder="Your Qualification" required>
+            
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Describe your experience" rows="4" required></textarea>
+            
+            <button type="submit">Generate Resume</button>
+        </form>
+        
+        <!-- Section to display the generated resume -->
+        <div id="generatedResume" class="resume-display">
+            <!-- Generated resume will be injected here -->
+        </div>
+    </div>
+    <script src="resume.js"></script>
+</body>
+</html>
